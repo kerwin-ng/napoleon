@@ -1,0 +1,39 @@
+/* 头部 */
+.header {
+  background-color: transparent;
+  padding: 1em 0em;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100000;
+  transition: all linear 0.4s;
+}
+.header .navbar {
+  background-color: transparent;
+  border: 0px;
+  border-radius: 0px;
+  margin: 0;
+}
+.header .navbar .navbar-brand {
+  color: #fff;
+  text-transform: uppercase;
+  font-family: OSBold;
+}
+.header .navbar .nav a {
+  color: #fff;
+  text-transform: uppercase;
+  border-bottom: 3px solid transparent;
+  transition: all linear 0.3s;
+}
+.header .navbar .nav a:hover {
+  border-bottom: 3px solid #fcac45;
+}
+@media screen and (max-width: 768px) {
+  .header {
+    background-color: #111111;
+  }
+  .header .navbar .nav a {
+    text-align: center;
+  }
+}
