@@ -2,6 +2,13 @@
     .navbar-inverse {
         background-color: rgba(0,0,0,0);
         border: none;
+
+        .user {
+            height: 30px; 
+            width: 30px; 
+            margin: 10px;
+            margin-left: 15px;
+        }
     
         .navbar-header {
     
@@ -24,6 +31,30 @@
                     &:hover{
                         border-bottom:3px solid #e1e1e1;
                         margin-top: 10px;
+                    }
+                }
+
+            }
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        & {
+            .navbar {
+
+                .user {
+                    display: none;
+                }
+                .collapse {
+                    .nav {
+                        a {
+        
+                            a:hover{
+                                border-bottom:2px solid #e1e1e1;
+                                margin-top: 0px;
+                            }
+                        }
+        
                     }
                 }
             }
@@ -50,8 +81,9 @@
 
     .box {
         text-align: left;
-        padding: 7em 0em 2em;
+        padding: 9em 0em 2em;
         height: 100%;
+        margin-bottom: 15em;
 
         // .title {
         //     margin-top: 4em;
@@ -75,11 +107,15 @@
         margin-left: 7em;
     }
 
+    .scroll {
+        text-align: center;
+    }
 
 
-    @media screen and (max-width: 855px) { /*当屏幕尺寸小于600px时，应用下面的CSS样式*/
+
+    @media screen and (max-width: 1000px) { /*当屏幕尺寸小于1008px时，应用下面的CSS样式*/
         .box {
-            padding: 10em 0em 6.2em;
+            padding: 10em 0em 9.7em;
             .title {
                 margin-top: 11em;
                 margin-left: 4em;
@@ -93,7 +129,15 @@
                 width: 60%;
                 height: 60%;
             }
-        }          
+
+        }         
+    }
+
+    // 隐藏scroll翻页
+    @media screen and (max-height: 778px) {
+        .scroll {
+            display: none;
+        } 
     }
 }
 
@@ -107,14 +151,7 @@
         text-align: center;
         .news {
             margin-top: 5em;
-            margin-right: 3.3em;
-            .swiper {
-                width: 600px;
-                height: 337px;
-                background-color: aquamarine;
-                text-align: left;
-                margin-bottom: 3em;
-            }
+            margin-right: 5em;
 
             .carousel-inner {
                 margin-bottom: 3em;
@@ -144,8 +181,40 @@
             }
         }
     }
+
+    @media screen and (max-width: 1000px) {
+        & {
+            padding-top: 3em;
+            .container {
+                margin-top: 4em;
+                flex-wrap: wrap;
+                .news {
+                    margin-left: 0em;
+                    margin-right: 0em;
+
+                    .carousel-inner {
+                        margin-bottom: 7em;
+                        img {
+                            height: 100%;
+                            width: 100%;
+                        }
+                    }
+
+                    .table {
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+
+                .img {
+                    display: none;
+                }
+            }
+        }
+    }
 }
 
+// 右侧导航
 .navContent {
     position: fixed;
     right: 5.25rem;
@@ -153,45 +222,148 @@
     z-index: 20;
     top: 20%;
 
-    .navMenuItem {
-        margin-top: 2em;
-        margin-bottom: 7em;
-        // border-right: 3px solid #1e96cc;
-        a {
-            
-            font-size: 1.5em;
-            color: #e1e1e1;
-            // text-transform: uppercase;
-            border-bottom:3px solid transparent;
-            transition:all linear .3s;
+    .navMenu {
+        padding: 10px;
 
-            &:hover {
-                margin-right: 10px;
-                color: #50d6fc;
-                border-bottom:3px solid #50d6fc;
+        .navMenuItem {
+            margin-top: 2em;
+            margin-bottom: 7em;
+            // border-right: 3px solid #1e96cc;
+    
+            a {
+                
+                font-size: 1.5em;
+                color: #e1e1e1;
+                // text-transform: uppercase;
+                border-bottom:3px solid transparent;
+                transition:all linear .3s;
+    
+                &:hover {
+                    
+                    // margin-right: 10px;
+                    color: #50d6fc;
+                    border-bottom:3px solid #50d6fc;
+                }
             }
+        }
 
+        &:hover {
+            background-color: rgba(0,0,0,0.3);
+        }
+    }
+
+
+    @media screen and (max-width: 1300px) {
+        & {
+            display: none;
         }
     }
 }
 
 .origin {
     background: url("../img/background2.png") no-repeat bottom center;
-    text-align: center;
-    padding-bottom: 0.5em;
-    margin-bottom: 2em;
-
+    
+    padding-bottom: 3em;
+    margin-bottom: 3em;
+    padding-top: 2em;
+    color: #c9c9c9;
+    
     .title {
+        text-align: center;
         font-family: OSLight;
-        font-size: 3em;
+        
+        font-size: 5em;
         text-transform: uppercase;
 
         span {
-            font-family: OSBold;
+            color: #1e96cc;
+            font-family: "OSBold";
         }
     }
 
     .text {
-        
+
+
+        h5 {
+            color: #c9c9c9;
+            text-align: center;
+            padding-top: 3em;
+            margin-bottom: 5em;
+            font-size: 1.5em;
+        }
+    }
+
+    .list {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 4em;
+
+        .item {
+            width: 20%;
+            text-align: center;
+            transition: all linear .2s;
+
+            .thumb {
+                overflow: hidden;
+                // margin-bottom: 0.5em;
+                
+
+                .img {
+                    width: 30%;
+                    
+                }
+
+
+            }
+
+            .content {
+                .info {
+                    font-family: OSLight;
+                    font-size: 1em;
+                    color: #c9c9c9;
+                    &:hover {
+                        border-bottom: 3px #c9c9c9 solid;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 1000px) {
+        & {
+            margin-bottom: 10px;
+            .subject {
+                .title {
+                    font-size: 3em;
+                }
+                .text {
+                    padding-top: 2em;
+                    margin-bottom: 3em;
+                    font-size: 1.3em;
+                    text-align: left;
+                }
+            }
+
+            .list {
+                display: flex;
+                flex-wrap: wrap;
+                .item {
+                    text-align: left;
+                    width: 40%;
+                    .thumb {
+                        
+                    }
+
+                    .content {
+                        
+                        .info {
+                            font-size: 1em;
+                        }
+                    }
+                }
+
+                
+            }
+        }
     }
 }
