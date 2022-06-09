@@ -1,0 +1,97 @@
+.header {
+    .navbar-inverse {
+        background-color: rgba(0,0,0,0);
+        border: none;
+    
+        .navbar-header {
+    
+            .logo {
+                color: #e1e1e1;
+            }
+    
+        }
+
+        .collapse {
+            .nav {
+                a {
+                    font-size: 1.2em;
+                }
+            }
+        }
+    }
+}
+
+.banner {
+    background: transparent;
+    margin-bottom: 10em;
+    
+
+    #background {
+        position: absolute;
+        top: 1;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -1000;
+    }
+
+    .box {
+        text-align: left;
+        padding: 7em 0em 2em;
+        height: 100%;
+
+        // .title {
+        //     margin-top: 4em;
+        //     margin-left: 2em;
+        //     font-family: OSBold;
+        //     font-size: 5em;
+        //     text-transform: uppercase;
+        //     color: #e1e1e1;
+        // }
+
+        .title {
+            margin-top: 15em;
+            margin-left: 7em;
+        }
+
+        
+    }
+
+    .text {
+        margin-top: 2em;
+        margin-left: 7em;
+    }
+
+    .bottom {
+        a {
+            text-align: center;
+            font-size: 5em;
+        }
+    }
+
+    @media screen and (max-width: 855px) { /*当屏幕尺寸小于600px时，应用下面的CSS样式*/
+        .box {
+            padding: 10em 0em 6.2em;
+            .title {
+                margin-top: 11em;
+                margin-left: 4em;
+                width: 60%;
+                height: 60%;
+            }
+
+            .text {
+                margin-top: 1em;
+                margin-left: 4em;
+                width: 60%;
+                height: 60%;
+            }
+        }          
+    }
+}
+
+.information {
+    background-color: aliceblue;
+}
