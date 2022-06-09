@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>二次元真恶心</title>
+    <title>napoleon</title>
 
     <!-- bootstary -->
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
@@ -14,17 +14,20 @@
     <link rel="stylesheet/less" href="./assets/css/reset.less" />
     <!-- 页面样式 -->
     <link rel="stylesheet/less" href="./assets/css/index.less">
+    <!-- swiper -->
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
 </head>
 <body>
     <!-- 导航栏 -->
     <header class="header" id="header">
-        <nav class="navbar navbar-inverse">
+        <nav class="navbar navbar-fixed-top navbar-inverse">
             <div class="navbar-header">
                 <a class="logo navbar-brand wow fadeInLeft" href="javascript:void(0)">Napoleon</a>
             </div>
 
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
+
                     <li>
                         <a href="">注册</a>
                     </li>
@@ -51,15 +54,181 @@
 
             <!-- 001 002 003 -->
             <div>
-                <img class="text" src="./assets/img/001.png" alt="">
+                <a href="">
+                    <img class="text" src="./assets/img/001.png" alt="">
+                </a>
             </div>
         </div>
 
+
     </div>
 
+    <!-- 情报 -->
     <div class="information" id="information">
-        
+        <div class="container">
+            <div class="news">
+
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img src="./assets/img/1.jpg" class="img-responsive">
+                        </div>
+
+                        <div class="item">
+                            <img src="./assets/img/4.jpg" class="img-responsive">
+                        </div>
+
+                        <div class="item">
+                            <img src="./assets/img/2.jpg" class="img-responsive">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div>
+                    <table class="table">
+                        <tr>
+                            <td>2022-06-02</td>
+                            <td class="day">活动</td>
+                            <td>[活动预告] XXXXXXXXXXXXX</td>
+                        </tr>
+                        <tr>
+                            <td>2022-06-02</td>
+                            <td class="day">活动</td>
+                            <td>[活动预告] XXXXXXXXXXXXX</td>
+                        </tr>
+                        <tr>
+                            <td>2022-06-02</td>
+                            <td class="day">活动</td>
+                            <td>[活动预告] XXXXXXXXXXXXX</td>
+                        </tr>
+
+                        <tr>
+                            <td>2022-06-02</td>
+                            <td class="day">活动</td>
+                            <td>[活动预告] XXXXXXXXXXXXX</td>
+                        </tr>
+
+                        <tr>
+                            <td>2022-06-02</td>
+                            <td class="day">活动</td>
+                            <td>[活动预告] XXXXXXXXXXXXX</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="img">
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <!-- <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    </ol> -->
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img src="./assets/img/girl1.png" class="img-responsive">
+                        </div>
+
+                        <div class="item">
+                            <img src="./assets/img/girl2.png" class="img-responsive">
+                        </div>
+
+                        <div class="item">
+                            <img src="./assets/img/girl3.png" class="img-responsive">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
     </div>
+
+    <!-- 关于 -->
+    <div class="origin">
+        <div class="container">
+            <div class="subject">
+                <h3 class="title">
+                    ABOUT
+                    <span>ORIGIN</span>
+                </h3>
+            </div>
+            <div class="text">
+                <h5>I see a beautiful city and a brilliant people rising from this abyss.
+
+                    I see the lives for which I lay down my life... peaceful... useful, prosperous and happy.
+                    
+                    I see that I hold a sanctuary in their hearts and in the hearts of their descendants, generations hence. 
+                    
+                    It is a far, far better thing that I do than I have ever done. 
+                    
+                    It is a far, far better rest that I go to than I have ever known.   </h5>
+            </div>
+        </div>
+        <div class="list">
+            <div class="item">
+                <div class="img-cicle thumb">
+                    <img src="./assets/img/icon1.png" alt="">
+                </div>
+                <div class="content">
+                    <span class="info">Resentment kills a fool, and envy slays the simple.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 右侧导航栏 -->
+    <div class="navContent" id="nav">
+        <ul class="navMenu">
+            <li class="navMenuItem item1" data-key="homepage" data-cursor="pointer">
+                <a href="#banner">首页</a>
+            </li>
+            </li>
+            <li class="navMenuItem" data-key="information" data-cursor="pointer">
+                <a href="#information">情报</a>
+            </li>
+            <li class="navMenuItem" data-key="world" data-cursor="pointer">
+                <a href="#">起源</a>
+            </li>
+            <li class="navMenuItem" data-key="media" data-cursor="pointer">
+                <a href="#">档案</a>
+            </li>
+        </ul>
+
+    </div>
+
+    <!-- <nav>
+        <div class="navContent">
+            <ul>
+                <li class="navMenuItem">
+                    <a href="#banner">首页</a>
+                </li>
+
+                <li class="navMenuItem">
+                    <a href="#banner">首页</a>
+                </li>
+
+                <li class="navMenuItem">
+                    <a href="#banner">首页</a>
+                </li>
+
+                <li class="navMenuItem">
+                    <a href="#banner">首页</a>
+                </li>
+            </ul>
+        </div>
+    </nav> -->
 
     <!-- jquery -->
     <script src="./assets/js/jquery-1.12.4.min.js"></script>
@@ -67,6 +236,21 @@
     <script src="./assets/js/bootstrap.min.js"></script>
     <!-- less -->
     <script src="./assets/js/less.min.js"></script>
+    <!-- swiper -->
+    <script src="./assets/js/swiper-bundle.min.js"></script>
 
+    <script>        
+        var mySwiper = new Swiper ('.swiper', {
+          direction: 'vertical', // 垂直切换选项
+          loop: true, // 循环模式选项
+          
+          // 如果需要分页器
+          pagination: {
+            el: '.swiper-pagination',
+          },
+          
+
+        })        
+    </script>
 </body>
 </html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #mySprite {
+	        background-image: url('images/滚动.png');
+        width: 1920px;
+        height: 1080px;
+        animation: myAnimation 1.00s steps(1) infinite;
+        }
+        @keyframes myAnimation {
+                0% { background-position: 0px 0px; }
+                4.17% { background-position: -1920px 0px; }
+                8.33% { background-position: 0px -1080px; }
+                12.50% { background-position: -1920px -1080px; }
+                16.67% { background-position: 0px -2160px; }
+                20.83% { background-position: -1920px -2160px; }
+                25.00% { background-position: 0px -3240px; }
+                29.17% { background-position: -1920px -3240px; }
+                33.33% { background-position: 0px -4320px; }
+                37.50% { background-position: -1920px -4320px; }
+                41.67% { background-position: 0px -5400px; }
+                45.83% { background-position: -1920px -5400px; }
+                50.00% { background-position: 0px -6480px; }
+                54.17% { background-position: -1920px -6480px; }
+                58.33% { background-position: 0px -7560px; }
+                62.50% { background-position: -1920px -7560px; }
+                66.67% { background-position: 0px -8640px; }
+                70.83% { background-position: -1920px -8640px; }
+                75.00% { background-position: 0px -9720px; }
+                79.17% { background-position: -1920px -9720px; }
+                83.33% { background-position: 0px -10800px; }
+                87.50% { background-position: -1920px -10800px; }
+                91.67% { background-position: 0px -11880px; }
+                95.83% { background-position: -1920px -11880px; }
+                100.00% { background-position: 0px -12960px; }
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        function transparentBG(){
+            var imgcode = 'iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPAQMAAAABGAcJAAAABlBMVEXMzMz////TjRV2AAAAEElEQVQI12P4x4AdMf7DRABP5Q7qGwTjpwAAAABJRU5ErkJggg==';
+            var img = "url('data:img/jpg;base64,"+imgcode+"')";
+            document.body.style.backgroundColor = "transparent";
+            document.body.style.backgroundImage = img;
+            document.getElementById('BGtransparent').style.backgroundColor = "transparent";
+            document.getElementById('BGtransparent').style.backgroundImage = img;
+            var w=document.getElementById('rawIMG').width;
+            var h=document.getElementById('rawIMG').height;
+            var text="Image size: "+w+"(w) X "+h+"(h)px."+"  Click black matt to close.";
+            document.getElementById('dsp').innerHTML = text;
+            if(w>=h){
+                document.getElementById('rawIMG').style.width="80%";
+            }else{
+                document.getElementById('rawIMG').style.height="80%";
+            }
+        }
+        window.onload = transparentBG;
+        function changeStyle(btn){
+            if(btn.id == "BGblack"){
+                document.body.style.backgroundImage = "none";
+                document.body.style.backgroundColor = "#000000";
+            }else if(btn.id == "BGwhite"){
+                document.body.style.backgroundImage = "none";
+                document.body.style.backgroundColor = "#FFFFFF";		
+            }else if(btn.id == "BGtransparent"){
+                transparentBG();
+            }else if(btn.id == "setColor"){
+                var theColor = document.getElementById('colorInput').value;
+                document.body.style.backgroundImage = "none";
+                document.body.style.backgroundColor = theColor;
+            }else{
+                alert("Backgroupd color error.");
+            }
+        }
+        function showRawImg(){
+            document.getElementById('matt').style.display = "block";
+            document.getElementById('rawIMG').style.display = "block";
+            document.getElementById('dsp').style.display = "block";
+        }
+        function closeRaw(){
+            document.getElementById('matt').style.display = "none";
+            document.getElementById('rawIMG').style.display = "none";
+            document.getElementById('dsp').style.display = "none";
+        }
+        function getColor(color){
+            var colorcode = color.value;
+            if(colorcode != ""){
+                document.getElementById('setColor').style.backgroundColor = colorcode;
+            }else{
+                document.getElementById('setColor').style.backgroundColor = document.body.style.backgroundColor;
+            }
+        }
+    </script>
+</body>
+</html>

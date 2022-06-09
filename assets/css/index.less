@@ -12,9 +12,19 @@
         }
 
         .collapse {
+            padding-right: 2em;
             .nav {
                 a {
                     font-size: 1.2em;
+                    color:#e1e1e1;
+                    text-transform: uppercase;
+                    border-bottom:3px solid transparent;
+                    transition:all linear .3s;
+
+                    &:hover{
+                        border-bottom:3px solid #e1e1e1;
+                        margin-top: 10px;
+                    }
                 }
             }
         }
@@ -23,12 +33,12 @@
 
 .banner {
     background: transparent;
-    margin-bottom: 10em;
+    margin-bottom: 6.3em;
     
 
     #background {
         position: absolute;
-        top: 1;
+        top: 0;
         right: 0;
         bottom: 0;
         min-width: 100%;
@@ -65,12 +75,7 @@
         margin-left: 7em;
     }
 
-    .bottom {
-        a {
-            text-align: center;
-            font-size: 5em;
-        }
-    }
+
 
     @media screen and (max-width: 855px) { /*当屏幕尺寸小于600px时，应用下面的CSS样式*/
         .box {
@@ -93,5 +98,100 @@
 }
 
 .information {
-    background-color: aliceblue;
+    background: url('../img/background2.png');
+    padding-top: 4.8em;
+
+    .container {
+        display: flex;
+        margin-top: 5em;
+        text-align: center;
+        .news {
+            margin-top: 5em;
+            margin-right: 3.3em;
+            .swiper {
+                width: 600px;
+                height: 337px;
+                background-color: aquamarine;
+                text-align: left;
+                margin-bottom: 3em;
+            }
+
+            .carousel-inner {
+                margin-bottom: 3em;
+                img {
+                    height: 270px;
+                    width: 480px;
+                }
+            }
+
+            .table {
+                background-color: #242424;
+                color: #c9c9c9;
+                height: 200px;
+                width: 480px;
+                font-family: OSLight;
+
+                .day {
+                    color: #1e96cc;
+                }
+            }
+        }
+
+        .img {
+            height: 942px;
+            img {
+                height: 70%;              
+            }
+        }
+    }
+}
+
+.navContent {
+    position: fixed;
+    right: 5.25rem;
+    height: 100%;
+    z-index: 20;
+    top: 20%;
+
+    .navMenuItem {
+        margin-top: 2em;
+        margin-bottom: 7em;
+        // border-right: 3px solid #1e96cc;
+        a {
+            
+            font-size: 1.5em;
+            color: #e1e1e1;
+            // text-transform: uppercase;
+            border-bottom:3px solid transparent;
+            transition:all linear .3s;
+
+            &:hover {
+                margin-right: 10px;
+                color: #50d6fc;
+                border-bottom:3px solid #50d6fc;
+            }
+
+        }
+    }
+}
+
+.origin {
+    background: url("../img/background2.png") no-repeat bottom center;
+    text-align: center;
+    padding-bottom: 0.5em;
+    margin-bottom: 2em;
+
+    .title {
+        font-family: OSLight;
+        font-size: 3em;
+        text-transform: uppercase;
+
+        span {
+            font-family: OSBold;
+        }
+    }
+
+    .text {
+        
+    }
 }
