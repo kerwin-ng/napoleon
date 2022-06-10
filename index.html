@@ -4,21 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>napoleon</title>
+    <title>Napoleon</title>
 
-    <!-- 页面样式 -->
-    <link rel="stylesheet/less" href="./assets/css/index.less">
+    <!-- animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!-- bootstary -->
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
-    <!-- animate -->
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
+    <!-- 页面样式 -->
+    <link rel="stylesheet/less" href="./assets/css/index.less">
     <!-- 重置样式 -->
     <link rel="stylesheet/less" href="./assets/css/reset.less" />
 </head>
 <body>
+    <!-- 先引入避免卡顿 -->
+    <!-- bootstary -->
+    <script src="./assets/js/bootstrap.min.js"></script> 
+    <!-- jquery -->
+    <script src="./assets/js/jquery-1.12.4.min.js"></script>
+    <!-- less -->
+    <script src="./assets/js/less.min.js"></script>
+
     <!-- 导航栏 -->
     <header class="header animate__animated animate__fadeIn" id="header">
         <nav class="navbar navbar-fixed-top navbar-inverse">
@@ -65,7 +70,7 @@
         </nav>
     </header>
 
-    <!-- banner -->
+    <!-- 主页 -->
     <div class="banner" id="banner">
         <video autoplay id="background" muted loop>
             <source src="./assets/img/background-r.mp4">
@@ -240,7 +245,7 @@
         </div>
     </div>
 
-    <!-- footer -->
+    <!-- 尾部 -->
     <footer class="footer" id="footer">
         <div class="container">
             <div class="box">
@@ -305,13 +310,6 @@
         </ul>
 
     </div>
-
-    <!-- jquery -->
-    <script src="./assets/js/jquery-1.12.4.min.js"></script>
-    <!-- less -->
-    <script src="./assets/js/less.min.js"></script>
-    <!-- bootstary -->
-    <script src="./assets/js/bootstrap.min.js"></script>  
     
 </body>
 </html>
