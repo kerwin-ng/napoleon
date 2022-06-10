@@ -243,6 +243,7 @@
     <footer class="footer" id="footer">
         <div class="container">
             <div class="box">
+
                 <div>
                     <span class="title">
                         Napoleon
@@ -252,6 +253,7 @@
                         come from arknights
                     </div>
                 </div>
+
                 <div class="name">
                     <span class="glyphicon glyphicon-console">
                         <a href="https://github.com/kerwin-ng">
@@ -259,13 +261,25 @@
                         </a>
                     </span>
                 </div>
+
                 <div class="github"> 
                     <span class="glyphicon glyphicon-thumbs-up">
                         <a href="https://github.com/kerwin-ng/napoleon">
                             https://github.com/kerwin-ng/napoleon
                         </a>
                     </span>
-                    
+                </div>
+
+                <div class="ipAddress">
+                    <span class="glyphicon glyphicon-globe">
+                        <!-- get ip address -->
+                        <script type="application/javascript">
+                            function getip(json){
+                                document.write(json.ip);
+                            }
+                        </script>
+                        <script type="application/javascript" src="https://api.ip.sb/jsonip?callback=getip"></script>
+                    </span>
                 </div>
             </div>
         </div>
@@ -297,6 +311,6 @@
     <script src="./assets/js/bootstrap.min.js"></script>
     <!-- less -->
     <script src="./assets/js/less.min.js"></script>
-
+    
 </body>
 </html>
