@@ -117,8 +117,8 @@
     }
 
     .scroll {
+        justify-content: space-around;
         text-align: center;
-
     }
 
 
@@ -144,7 +144,7 @@
     }
 
     // 隐藏scroll翻页
-    @media screen and (max-height: 778px) {
+    @media screen and (max-height: 667px) {
         .scroll {
             display: none;
         } 
@@ -312,11 +312,13 @@
         display: flex;
         justify-content: space-around;
         margin-bottom: 4em;
+        margin: 0px 60px 0px;
 
         .item {
             width: 20%;
             text-align: center;
             transition: all linear .2s;
+            
 
             .thumb {
                 overflow: hidden;
