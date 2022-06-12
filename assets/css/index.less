@@ -274,8 +274,8 @@
 
 // 起源
 .origin {
-    background: url("../img/background2.png") no-repeat bottom center;
     
+    background: url("../img/background2.png") no-repeat bottom center;
     padding-bottom: 3em;
     margin-bottom: 0em;
     padding-top: 2em;
@@ -433,7 +433,7 @@
     // }
 }
 
-// f尾部
+// 尾部
 .footer {
     background-color: #222222;
     padding: 3em 0em;
@@ -508,4 +508,87 @@
             }
         }
     }
+}
+
+// Scroll
+@keyframes scrollAnimation {
+	0% { background-position: 0px 0px; }
+	4.17% { background-position: -1920px 0px; }
+	8.33% { background-position: 0px -1080px; }
+	12.50% { background-position: -1920px -1080px; }
+	16.67% { background-position: 0px -2160px; }
+	20.83% { background-position: -1920px -2160px; }
+	25.00% { background-position: 0px -3240px; }
+	29.17% { background-position: -1920px -3240px; }
+	33.33% { background-position: 0px -4320px; }
+	37.50% { background-position: -1920px -4320px; }
+	41.67% { background-position: 0px -5400px; }
+	45.83% { background-position: -1920px -5400px; }
+	50.00% { background-position: 0px -6480px; }
+	54.17% { background-position: -1920px -6480px; }
+	58.33% { background-position: 0px -7560px; }
+	62.50% { background-position: -1920px -7560px; }
+	66.67% { background-position: 0px -8640px; }
+	70.83% { background-position: -1920px -8640px; }
+	75.00% { background-position: 0px -9720px; }
+	79.17% { background-position: -1920px -9720px; }
+	83.33% { background-position: 0px -10800px; }
+	87.50% { background-position: -1920px -10800px; }
+	91.67% { background-position: 0px -11880px; }
+	95.83% { background-position: -1920px -11880px; }
+	100.00% { background-position: 0px -12960px; }
+}
+
+#scroll {
+    background-image: url('../img/scroll.png');
+    width: 240px;
+    height: 150px;
+    animation: scrollAnimation 2s steps(1) infinite;
+    // position: fixed;
+    // right: 93.25rem;
+    // top: 75%;
+    margin: auto;
+}
+
+// Mouse
+@keyframes myAnimation {
+	0% { background-position: 0px 0px; }
+	4.00% { background-position: -1920px 0px; }
+	8.00% { background-position: 0px -1080px; }
+	12.00% { background-position: -1920px -1080px; }
+	16.00% { background-position: 0px -2160px; }
+	20.00% { background-position: -1920px -2160px; }
+	24.00% { background-position: 0px -3240px; }
+	28.00% { background-position: -1920px -3240px; }
+	32.00% { background-position: 0px -4320px; }
+	36.00% { background-position: -1920px -4320px; }
+	40.00% { background-position: 0px -5400px; }
+	44.00% { background-position: -1920px -5400px; }
+	48.00% { background-position: 0px -6480px; }
+	52.00% { background-position: -1920px -6480px; }
+	56.00% { background-position: 0px -7560px; }
+	60.00% { background-position: -1920px -7560px; }
+	64.00% { background-position: 0px -8640px; }
+	68.00% { background-position: -1920px -8640px; }
+	72.00% { background-position: 0px -9720px; }
+	76.00% { background-position: -1920px -9720px; }
+	80.00% { background-position: 0px -10800px; }
+	84.00% { background-position: -1920px -10800px; }
+	88.00% { background-position: 0px -11880px; }
+	92.00% { background-position: -1920px -11880px; }
+	96.00% { background-position: 0px -12960px; }
+	100.00% { background-position: -1920px -12960px; }
+}
+
+#mouse {
+	background-image: url('../img/mouse.png');
+   width: 248px;
+   height: 141px;
+   animation: myAnimation 3.04s steps(1) infinite;
+   background-color: #242424;
+}
+
+.mouseDiv {
+    top: 60%;
+    overflow: hidden;
 }

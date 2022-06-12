@@ -15,7 +15,7 @@
     <!-- 重置样式 -->
     <link rel="stylesheet/less" href="./assets/css/reset.less" />
 </head>
-<body>
+<body style="cursor: url('./assets/img/mouse-icon.png'), pointer;">
     <!-- 先引入避免卡顿 -->
     <!-- jquery -->
     <script src="./assets/js/jquery-1.12.4.min.js"></script>
@@ -72,7 +72,7 @@
 
     <!-- 主页 -->
     <div class="banner" id="banner">
-        <video autoplay id="background" muted loop>
+        <video autoplay id="background" controls autoplay playsinline muted loop>
             <source src="./assets/img/background-r.mp4">
         </video>
 
@@ -90,7 +90,7 @@
 
         <div class="scroll">
             <a href="#information">
-                <img src="./assets/img/scroll.png" alt="">
+                <img src="./assets/img/scroll-1.png" alt="">
             </a>
         </div>
 
@@ -308,7 +308,6 @@
                 <a href="#footer">档案</a>
             </li>
         </ul>
-
     </div>
     
 </body>
