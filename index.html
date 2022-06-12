@@ -34,7 +34,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <!-- <img class="navbar-brand logoImg" src="./assets/img/logo.png"> -->
+
                 <a class="logo navbar-brand wow fadeInLeft" href="https://github.com/kerwin-ng/napoleon">Napoleon</a>
             </div>
             <img class="user nav navbar-nav navbar-right" src="./assets/img/user.png">
@@ -59,11 +59,11 @@
                     </li>
 
                     <li>
-                        <a href="">注册</a>
+                        <a href="#identifier" data-toggle="modal" data-target="#registerModal">注册</a>
                     </li>
 
                     <li>
-                        <a href="">登录</a>
+                        <a href="identifier" data-toggle="modal" data-target="#loginModal">登录</a>
                     </li>
                 </ul>
             </div> 
@@ -255,9 +255,9 @@
                         Napoleon
                     </span>
                     
-                    <div class="title2">
+                    <!-- <div class="title2">
                         come from arknights
-                    </div>
+                    </div> -->
                 </div>
 
                 <div class="name">
@@ -308,6 +308,65 @@
                 <a href="#footer">档案</a>
             </li>
         </ul>
+    </div>
+
+    <!-- 注册弹窗 -->
+    <div class="modal fade register" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="register" aria-hidden="true">
+        <div class="modal-dialog content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel">注册</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="username">
+                        <div class="input-group input-group-lg">
+                            <span class="input-group-addon" id="basic-addon1">账号</span>
+                            <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+                        </div>
+                        <div class="input-group input-group-lg">
+                            <span class="input-group-addon" id="basic-addon1">密码</span>
+                            <input type="password" class="form-control" placeholder="Password" aria-describedby="basic-addon1">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">退出</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">提交</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal -->
+    </div>
+
+    <!-- 登录弹窗 -->
+    <div class="modal fade login" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="login" aria-hidden="true">
+        <div class="modal-dialog content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel">登录</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="username">
+                        <div class="input-group input-group-lg">
+                            <span class="input-group-addon" id="basic-addon1">账号</span>
+                            <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+                        </div>
+                        <div class="input-group input-group-lg">
+                            <span class="input-group-addon" id="basic-addon1">密码</span>
+                            <input type="password" class="form-control" placeholder="Password" aria-describedby="basic-addon1">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">退出</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">提交</button>
+
+                    <!-- <button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove" style="margin-right: 10px;"></span>退出</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal"><span class="glyphicon glyphicon-ok" style="margin-right: 10px;"></span>提交</button> -->
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal -->
     </div>
     
 </body>
