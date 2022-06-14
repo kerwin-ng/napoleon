@@ -115,17 +115,32 @@
             margin-left: 7em;
         }
 
+        .subtitle {
+            display: flex;
+            height: 100px;
+            .content {
+                margin-top: 1em;                
+            }
+        }
         
     }
 
     .text {
         margin-top: 2em;
         margin-left: 7em;
+        border-bottom:3px solid transparent;
+        transition:all linear .3s;
+        
+        &:hover {
+            border-bottom: 3px solid #e1e1e1;
+            padding-top: 10px;
+        }
     }
 
     .scroll {
         justify-content: space-around;
         text-align: center;
+        display: flex;
     }
 
 
@@ -150,7 +165,7 @@
         }         
     }
 
-    // 隐藏scroll翻页
+    // 高度小于668px 隐藏scroll翻页
     @media screen and (max-height: 668px) {
         .scroll {
             display: none;
@@ -247,6 +262,10 @@
             margin-top: 2em;
             margin-bottom: 7em;
             // border-right: 3px solid #1e96cc;
+
+            .content {
+                
+            }
     
             a {
                 
