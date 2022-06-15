@@ -14,6 +14,8 @@
     <link rel="stylesheet/less" href="./assets/css/index.less">
     <!-- 重置样式 -->
     <link rel="stylesheet/less" href="./assets/css/reset.less" />
+    <!-- 预加载视频背景 -->
+    <link rel="prefetch" href="./assets/img/background-r.mp4">
 </head>
 <body style="cursor: url('./assets/img/mouse-icon.png') 28 28, default;">
     <!-- 先引入避免卡顿 -->
@@ -55,7 +57,7 @@
                     </li>
 
                     <li>
-                        <a href="#footer"  class="navHidden">档案</a>
+                        <a href="#file"  class="navHidden">档案</a>
                     </li>
 
                     <li>
@@ -111,7 +113,7 @@
 
         <div class="scroll animate__animated animate__fadeInDown">
             <a href="#information">
-                <img src="./assets/img/滑动条.gif" alt="" style="width: 384px; height: 216px;">
+                <img src="./assets/img/scroll.gif" alt="" style="width: 384px; height: 216px;">
             </a>
         </div>
 
@@ -266,6 +268,26 @@
         </div>
     </div>
 
+    <!-- 档案 -->
+    <div class="file" id="file">
+        <div>
+            <img src="./assets/img/saxon-white-f4oKjvgIsoM-unsplash.png" alt="">
+        </div>
+
+        <div class="text">
+            <div>
+                <h1>Hello,world.</h1>
+                <h5>
+                    Our scars can destroy us, 
+                    even after the physical wounds have healed. 
+                    But if we survive them, they can transform us. 
+                    They can give us the power to endure, 
+                    and the strength to fight.
+                </h5>
+            </div>
+        </div>
+    </div>
+
     <!-- 尾部 -->
     <footer class="footer" id="footer">
         <div class="container">
@@ -326,7 +348,7 @@
                 <a href="#origin">起源</a>
             </li>
             <li class="navMenuItem" data-key="media" data-cursor="pointer">
-                <a href="#footer">档案</a>
+                <a href="#file">档案</a>
             </li>
         </ul>
     </div>

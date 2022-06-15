@@ -458,6 +458,85 @@
     // }
 }
 
+// 档案
+.file {
+    // background-color: #e0e0e0;
+    background-color: #424242;
+    display: flex;
+
+    img {
+        transition:all linear .3s;
+
+        &:hover {
+            
+        }
+    }
+
+    .text {
+        height: 30%;
+        width: 30%;
+        margin-top: 18em;
+        margin-left: 5.5em;
+        transition:all linear .3s;
+
+        h1 {
+            color: #e0e0e0;
+            font-size: 4em;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+        }
+
+        h5 {
+            color: #e0e0e0;
+            font-size: 2.5em;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        &:hover {
+            h1 {
+                color: #ffffff;
+            }
+
+            h5 {
+                color: #ffffff;
+            }
+        }
+    }
+
+    @media screen and (max-width: 1500px) {
+        .text {
+            margin-left: 2.5em;
+            h1 {
+                font-size: 2em;
+            }
+
+            h5 {
+                font-size: 1.5em;
+            }
+        }
+    }
+
+    @media screen and (max-width: 1000px) {
+        flex-wrap: wrap;
+        
+
+        .text {
+            width: 80%;
+            height: 80%;
+            margin: 0 auto;
+            padding-top: 2em;
+            padding-bottom: 3em;
+
+            h1 {
+                font-size: 3em;
+            }
+    
+            h5 {
+                font-size: 2em;
+            }
+        }
+    }
+}
+
 // 尾部
 .footer {
     background-color: #222222;
@@ -535,46 +614,7 @@
     }
 }
 
-// Scroll
-@keyframes scrollAnimation {
-	0% { background-position: 0px 0px; }
-	4.17% { background-position: -1920px 0px; }
-	8.33% { background-position: 0px -1080px; }
-	12.50% { background-position: -1920px -1080px; }
-	16.67% { background-position: 0px -2160px; }
-	20.83% { background-position: -1920px -2160px; }
-	25.00% { background-position: 0px -3240px; }
-	29.17% { background-position: -1920px -3240px; }
-	33.33% { background-position: 0px -4320px; }
-	37.50% { background-position: -1920px -4320px; }
-	41.67% { background-position: 0px -5400px; }
-	45.83% { background-position: -1920px -5400px; }
-	50.00% { background-position: 0px -6480px; }
-	54.17% { background-position: -1920px -6480px; }
-	58.33% { background-position: 0px -7560px; }
-	62.50% { background-position: -1920px -7560px; }
-	66.67% { background-position: 0px -8640px; }
-	70.83% { background-position: -1920px -8640px; }
-	75.00% { background-position: 0px -9720px; }
-	79.17% { background-position: -1920px -9720px; }
-	83.33% { background-position: 0px -10800px; }
-	87.50% { background-position: -1920px -10800px; }
-	91.67% { background-position: 0px -11880px; }
-	95.83% { background-position: -1920px -11880px; }
-	100.00% { background-position: 0px -12960px; }
-}
-
-#scroll {
-    background-image: url('../img/scroll.png');
-    width: 240px;
-    height: 150px;
-    animation: scrollAnimation 2s steps(1) infinite;
-    // position: fixed;
-    // right: 93.25rem;
-    // top: 75%;
-    margin: auto;
-}
-
+// 注册 登录弹窗
 .register ,.login {
     cursor: default;
     background-color: rgba(0,0,0,0.7);
