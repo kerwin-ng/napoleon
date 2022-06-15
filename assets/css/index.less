@@ -101,15 +101,6 @@
         height: 100%;
         margin-bottom: 6em;
 
-        // .title {
-        //     margin-top: 4em;
-        //     margin-left: 2em;
-        //     font-family: OSBold;
-        //     font-size: 5em;
-        //     text-transform: uppercase;
-        //     color: #e1e1e1;
-        // }
-
         .title {
             margin-top: 22em;
             margin-left: 7em;
@@ -129,7 +120,7 @@
         margin-top: 2em;
         margin-left: 7em;
         border-bottom:3px solid transparent;
-        transition:all linear .3s;
+        transition:all linear .2s;
         
         &:hover {
             border-bottom: 3px solid #e1e1e1;
@@ -198,11 +189,26 @@
                 color: #c9c9c9;
                 height: 200px;
                 width: 576px;
-                font-family: OSLight;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                border-bottom: 2px solid #424242;
 
-                .day {
-                    color: #1e96cc;
+                tr {
+                    border-top: 2px solid #424242;
+                    transition: all linear .2s;
+                    .day {
+                        color: #1e96cc;
+                        font-weight: bold;
+                    }
+
+                    &:hover {
+                        background-color: #1e96cc;
+
+                        .day {
+                            color: #c9c9c9;
+                        }
+                    }
                 }
+                
             }
         }
 
