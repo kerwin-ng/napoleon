@@ -186,7 +186,7 @@
 
             .table {
                 background-color: #242424;
-                color: #c9c9c9;
+                color: #e0e0e0;
                 height: 200px;
                 width: 576px;
                 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -195,16 +195,24 @@
                 tr {
                     border-top: 2px solid #424242;
                     transition: all linear .2s;
+
+                    .link {
+                        color: #e0e0e0;
+                    }
+                    
                     .day {
                         color: #1e96cc;
                         font-weight: bold;
                     }
+                    
 
                     &:hover {
                         background-color: #1e96cc;
 
                         .day {
-                            color: #c9c9c9;
+                            a {
+                                color: #e0e0e0;
+                            }        
                         }
                     }
                 }
